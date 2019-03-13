@@ -36,7 +36,7 @@ int main(int argc, char *argv[]) {
     int method_id = get_method_id(argv[1]);
     std::string filename = argv[2];
     std::ifstream file(argv[2]);
-    std::ofstream output_file(argv[3], std::ofstream::out | std::ofstream::app);
+    std::ofstream output_file(argv[3], std::ofstream::out);
     unsigned count = 0;
     long long total_time = 0;
     if (method_id == 1) {
@@ -59,8 +59,8 @@ int main(int argc, char *argv[]) {
         auto finish_time = get_current_time_fenced();
         total_time = to_us(finish_time - start_time);
     }
-    std::cout << count << std::endl;
-    output_file << "Total time is: " << total_time << '.' << std::endl;
+    std::cout << total_time << std::endl;
+    output_file << count << std::endl;
     file.close();
     output_file.close();
     return 0;
