@@ -5,6 +5,7 @@
 #include "word_count.h"
 #include "tristan_tokenizing_algorithm.h"
 #include "boost_way_of_tokenizing.h"
+#include <iostream>
 
 int get_method_id(const char *id) {
     return *id - 48;

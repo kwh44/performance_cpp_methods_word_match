@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.0)
 
 project(performance_cpp_tools CXX)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 
 if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
     add_compile_options(-O3)
