@@ -7,6 +7,6 @@
 
 #include <fstream>
 
-unsigned all_in_memory_token(std::ifstream &file);
+unsigned tristan_algorithm(std::ifstream &file);
 
 #endif //PERFORMANCE_CPP_TOOLS_ALL_IN_MEMORY_TOKENIZING_H
