@@ -1,8 +1,13 @@
 #!/usr/bin/python3.7
 import sys
 import subprocess
+import os
 
-prog = "./build/main"
+
+if os.name =="nt":
+	prog = "./build/main.exe"
+else:
+	prog = "./build/main"
 number_of_algos = 3
 algs = ['word_file_idiom', 'tristan_algorithm', 'boost_algorithm']
 
