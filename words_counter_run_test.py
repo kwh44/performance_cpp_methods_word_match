@@ -20,6 +20,7 @@ def get_result(filename):
 
 
 if __name__ == "__main__":
+    print("First word counter time in microseconds:")
     if len(sys.argv) != 4:
         raise ValueError("Wrong amount of args")
     num, inp, out = int(sys.argv[1]), sys.argv[2], sys.argv[3]
