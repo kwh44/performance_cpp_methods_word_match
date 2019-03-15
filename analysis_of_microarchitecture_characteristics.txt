@@ -1,0 +1,44 @@
+Using CPUID GenuineIntel-6-4E
+Warning:
+kernel.perf_event_paranoid=2, trying to fall back to excluding kernel samples
+Warning:
+kernel.perf_event_paranoid=2, trying to fall back to excluding kernel samples
+Warning:
+kernel.perf_event_paranoid=2, trying to fall back to excluding kernel samples
+Warning:
+kernel.perf_event_paranoid=2, trying to fall back to excluding kernel samples
+Warning:
+kernel.perf_event_paranoid=2, trying to fall back to excluding kernel samples
+Warning:
+kernel.perf_event_paranoid=2, trying to fall back to excluding kernel samples
+Warning:
+kernel.perf_event_paranoid=2, trying to fall back to excluding kernel samples
+Warning:
+kernel.perf_event_paranoid=2, trying to fall back to excluding kernel samples
+
+task-clock:u: 9789991212 9789991212 9789991212
+context-switches:u: 0 9789991212 9789991212
+cpu-migrations:u: 0 9789991212 9789991212
+page-faults:u: 99162 9789991212 9789991212
+cycles:u: 17877781684 9794208701 9794208701
+instructions:u: 42778177876 9794208701 9794208701
+branches:u: 9193387146 9794208701 9794208701
+branch-misses:u: 106708570 9794208701 9794208701
+
+ Performance counter stats for './words_counter_run_test.py 100 ../test_data_file.txt ../test_output_file.txt':
+
+          9,789.99 msec task-clock:u              #    1.003 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+            99,162      page-faults:u             # 10129.942 M/sec                 
+    17,877,781,684      cycles:u                  # 1826313.381 GHz                 
+    42,778,177,876      instructions:u            #    2.39  insn per cycle         
+     9,193,387,146      branches:u                # 939154882.623 M/sec             
+       106,708,570      branch-misses:u           #    1.16% of all branches        
+
+       9.759627776 seconds time elapsed
+
+       9.031322000 seconds user
+       0.749427000 seconds sys
+
+

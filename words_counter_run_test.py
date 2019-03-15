@@ -3,18 +3,16 @@ import sys
 import subprocess
 import os
 
-
-if os.name =="nt":
-	prog = "./build/main.exe"
+if os.name == "nt":
+    prog = "./build/main.exe"
 else:
-	prog = "./build/main"
+    prog = "./build/main"
 number_of_algos = 3
 algs = ['word_file_idiom', 'tristan_algorithm', 'boost_algorithm']
 
 
 def get_result(filename):
-    word = None
-    with open(filename, 'r', encoding='utf-8', errors='ignore') as file:
+    with open(filename, encoding='utf-8', errors='ignore') as file:
         word = [line.strip() for line in file]
     return word[0]
 
@@ -36,4 +34,4 @@ if __name__ == "__main__":
             previous_result = get_result(out)
         elif previous_result != get_result(out):
             raise ValueError("Results don`t match")
-        print("\n{}  {}".format(algs[i-1],str(min_time)))
+        print("\n{}  {}".format(algs[i - 1], str(min_time)))
