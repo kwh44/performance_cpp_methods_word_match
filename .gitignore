@@ -3,3 +3,4 @@ build/
 cmake-build-debug/
 test_output_file.txt
 test_data_file.txt
+out.txt
