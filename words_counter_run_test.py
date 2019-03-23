@@ -2,11 +2,19 @@
 import sys
 import subprocess
 import os
+    
+prog = "main"
 
 if os.name == "nt":
-    prog = "./build/main.exe"
-else:
-    prog = "./build/main"
+    prog = prog + ".exe."
+
+for root, directories, file_list in os.walk('.'):
+    if prog in file_list:
+        if os.name == "nt":
+            prog = root +'\\' + prog
+        else:
+            prog = root + '/' + prog
+
 number_of_algos = 3
 algs = ['word_file_idiom', 'tristan_algorithm', 'boost_algorithm']
 
